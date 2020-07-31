@@ -1,0 +1,139 @@
+<html>
+	<head>
+
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		
+		<title> DAME DOLLA </title>
+
+		<script>
+		function banner() {
+			var text = confirm("U REALLY WANNA CLICK DIS DO");
+			return text;
+		}
+
+		function answer(){
+			var radio = document.getElementsByName("trivia");
+			var selection = false;
+			var message = "";
+			for( var i = 0; i < radio.length; i++) {
+			if(radio[i].value == "yes" && radio[i].checked == true) {
+				selection = true;
+			} //end if statement
+		} //end for loop
+
+			if(selection == true) {
+				message = message + "<b><p style='color:green'>You Are a True Dame Fan!!!</p></b>";
+			} else {
+			message = message + "<b><p style='color:red'>FAIL.</p></b>";
+			}
+				document.getElementById("response").innerHTML = message;
+
+		} //end function answer
+		</script>
+
+	</head>
+	<body id="background">
+
+		<a href="http://www.damedolla.com/" onclick="return banner()">
+		<header id="banner"> WELCOME TO <span class="wrap-text">MY WEBSITE</span>. </header>
+	   </a>
+
+		<nav>  
+			<ul id="navmenu">
+				<li class="navitem"> <a href="index.html"> Home </a> </li>
+				<li class="navitem"> <a href="games.html"> Games </a> </li>
+				<li class="navitem"> <a href="videos.html"> Videos </a> </li>
+
+			</ul
+		</nav>
+
+
+		<div class="rightside">
+
+
+		<center>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/i-Ak47agW_o" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+		<br/> <br/><br/> 
+		
+			<img  width= "70%" src="https://sports.inquirer.net/files/2017/11/AP17307193481586.jpg" />
+			<br/><br/><br/><br/>
+			<img  width= "70%" src="https://clutchpoints.com/wp-content/uploads/2020/01/Damian-Lillard-casually-pulls-up-from-the-logo-and-sinks-the-long-3-pointer.jpg" />
+		</center>
+
+
+
+		</div> <!-- closing rightside div -->
+
+
+
+		<div class="leftside">
+
+
+
+			<h1> Damian Lillard </h1>
+
+		<p>
+			<strong>Damian Lamonte Ollie Lillard Sr.</strong> is an American professional basketball player for the <strong>Portland Trail Blazers.  </strong> Damian Lillard graduated from <i>Weber State University</i> on a basketball scholarship and then was drafted 6th in the 2012 NBA draft. Damian Lillard is one of the top point guards in the NBA league and is known for his <u>deep three point shooting.</u>
+		</p>
+
+		<br/>
+
+		<h2>2019-2020 SEASON STATS (PER Game)</h2>
+
+		<div id="wrap-list">
+
+			<ul>
+				<li class="fart">28.9 PTS</li>
+				<li class="fart">7.8 AST </li>
+				<li class="fart">4.3 REB</li>
+			</ul>
+
+		</div>
+
+		<div class="wrap-trivia">
+
+		<h2>Damian Lillard Trivia</h2>
+		<p class="foot"> What is Damian Lillard's brother's name?</p>
+
+		<form>
+			<div id="response"></div>
+			<input type="radio" name="trivia" value="no"/> Isaiah <br/>
+			<input type="radio" name="trivia" value="no"/> CJ Muccolm <br/>
+			<input type="radio" name="trivia" value="yes"/> Houston <br/>
+			<input type="radio" name="trivia" value="no"/> Moshe <br/>
+			<input onclick="answer()" id="button" type="button" value="Test your Damian Lillard knowledge!" />
+			<br/> <br/>
+
+		 </form>
+
+		</div>
+
+
+		</div> <!-- closing leftside div -->
+
+		<div class="clearfloat"> </div>
+
+
+		
+
+
+		
+
+		<br/><br/>
+		<audio width="400" height="220" controls >
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML 5 audio.
+			</audio>
+			<br/><br/>
+
+
+
+		<hr/>
+
+		<center> Conrad Moore <a href="http://eelslap.com/">My Favorite Website</a> </center>
+<br/> <br/>
+		<footer id="footer"> made by: CONRAD MOORE</footer>
+		
+	</body>
+</html>
